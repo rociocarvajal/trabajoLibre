@@ -201,6 +201,7 @@
   $nLikes = trim(fgets(STDIN));
   $moreLikes = maxLikes($data, $nLikes);
   echo "La cantidad de comunicaciones que superan los likes ingresados: ($moreLikes).";
-  
+
+  ?>
   
 
