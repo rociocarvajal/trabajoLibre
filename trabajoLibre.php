@@ -13,7 +13,7 @@
     $datos[0] = array (
         "id" => "H1523",
         "nick" => "juan",
-        "cantLikes" => 45,
+        "cantLikes" => 450,
         "cantComent" => 15
     );
     $datos[1] = array (
@@ -76,15 +76,10 @@
 
   function moreLikes ($datos) {
     $n = count($datos);
-    $valorA = $datos[0]["cantLikes"];
-    $valorB = $datos[1]["cantLikes"];
-    for ($i=0; $i < $n ; $i++) { 
+    $valorA = 1;
+
+    for ($i=0; $i < $n; $i++) { 
         if ($valorA < $datos[$i]["cantLikes"]) {
-            $valorA = $datos[$i]["cantLikes"];
-            $newIndex = $i;
-        }
-        elseif ($valorA > $valorB) {
-            $valorB = $valorA;
             $valorA = $datos[$i]["cantLikes"];
             $newIndex = $i;
         }
@@ -99,32 +94,24 @@
     * @return int $n
     */
 
-    function validarNickname ($datos, $nickname) {
-        $n = 0;
+    function validarNickname($datos, $nickname) {
+        $n = -2; 
+        $nickname = strtolower($nickname);
         $i = 0;
-        $found = false;
-        while ($found == false && $i < count($datos)) {
-            $newIndex = 0;
+        while ($n === -2 && $i < count($datos)) {
             if ($datos[$i]["nick"] == $nickname) {
-                $newIndex = $newIndex + $i;
-                $nLikes = $datos[$newIndex]["cantLikes"];
-                $nComents = $datos[$newIndex]["cantComent"];
+                $nLikes = $datos[$i]["cantLikes"];
+                $nComents = $datos[$i]["cantComent"];
                 if ($nComents > $nLikes) {
-                    $n = $newIndex;
-                    $found = true;
-                }
-                else {
+                    $n = $i;
+                } else {
                     $n = -1;
                 }
-            }
-            else {
-                $n = -2;
             }
             $i++;
         }
         return $n;
     }
-
        /**
     * Función que encuentra a los mayores likes segun un número ingresado y retorna cantidad.
     * @param array $datos
@@ -134,7 +121,7 @@
 
     function maxLikes($datos, $inputLikes) {
         $indexado = [];
-        $i = 0;
+        $counter = 0;
         for ($i=0; $i < count($datos); $i++) { 
             if ($datos[$i]["cantLikes"] > $inputLikes) {
                 $newArray[] = $datos[$i]["id"];
@@ -142,7 +129,7 @@
                 
             }
             else {
-                $i++;
+                $counter++;
             }
         }
         return $indexado;
