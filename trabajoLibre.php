@@ -13,7 +13,7 @@
     $datos[0] = array (
         "id" => "H1523",
         "nick" => "juan",
-        "cantLikes" => 450,
+        "cantLikes" => 45,
         "cantComent" => 15
     );
     $datos[1] = array (
@@ -98,12 +98,14 @@
         $n = -2; 
         $nickname = strtolower($nickname);
         $i = 0;
-        while ($n === -2 && $i < count($datos)) {
+        $found = false;
+        while ($found == false && $i < count($datos)) {
             if ($datos[$i]["nick"] == $nickname) {
                 $nLikes = $datos[$i]["cantLikes"];
                 $nComents = $datos[$i]["cantComent"];
                 if ($nComents > $nLikes) {
                     $n = $i;
+                    $found = true;
                 } else {
                     $n = -1;
                 }
@@ -189,7 +191,7 @@ $number = validarNickname($data, $nick);
 if ($number >= 0) {
     $newAsociativo = $data[$number];
     echo "La primera comunicacion de $nick, que los comentarios superan a los likes es: \n";
-    print_r($newAsociativo);
+    mostrarData($newAsociativo);
 }
 elseif ($number == -1) {
     echo "$nick existe en la base de datos, pero en ninguna de sus publicaciones los comentarios superan likes.\n";
