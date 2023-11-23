@@ -1,16 +1,16 @@
-### Examen final - Introducción a la Programación
+## Examen final - Introducción a la Programación
 
-**Consigna a problema:**
+### Consigna a problema:
 
 ![WhatsApp Image 2023-11-23 at 10 56 02 AM](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/16292959-6e85-4dbe-8515-c8174d0c4fdb)
 ![WhatsApp Image 2023-11-23 at 10 56 01 AM (1)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/2cb891db-db49-43c8-a08a-d09d05fbfc67)
 ![WhatsApp Image 2023-11-23 at 10 56 01 AM](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/91843f9e-3cfb-4bfa-8954-289f64d25576)
 
-**Resolución:**
+### Resolución:
 
 > Punto 1:
   
-![Captura de pantalla (335)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/e564f370-5c70-4008-b0f9-614b8867bdb0)
+![Captura de pantalla (335)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/7e09fbda-3b08-4659-bde3-72506b2cd87c)
 
 > Punto 2:
 
@@ -44,6 +44,17 @@
 
   ![Captura de pantalla (344)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/cdfea075-eef1-40c8-a121-57c8f5ca313d)
 
-  
+### Ejecución:
+
+> [!IMPORTANT]
+> Para ejecutar el programa, simplemente ejecute el archivo PHP línea de comandos.
+
+### Bash:
+
+```
+php trabajoLibre.php
+```
+
+
   
 
