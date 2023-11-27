@@ -122,13 +122,10 @@
     */
 
     function maxLikes($datos, $inputLikes) {
-        $indexado = [];
         $counter = 0;
         for ($i=0; $i < count($datos); $i++) { 
             if ($datos[$i]["cantLikes"] > $inputLikes) {
-                $newArray[] = $datos[$i]["id"];
-                $indexado[] = $newArray;
-                
+                $indexado[] = $datos[$i]["id"];
             }
             else {
                 $counter++;
