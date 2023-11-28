@@ -26,7 +26,7 @@
   
 > Punto 5:
 
-![Captura de pantalla (339)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/1811f65c-5471-454e-bc73-cf4f122e25e0)
+![Captura de pantalla (352)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/b449ab42-9ad7-428f-9b18-313c697f08e9)
   
 > Punto 6:
 
