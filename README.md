@@ -44,12 +44,12 @@
 
   ![Captura de pantalla (344)](https://github.com/rociocarvajal/trabajoLibre/assets/136781946/cdfea075-eef1-40c8-a121-57c8f5ca313d)
 
+> [!IMPORTANT]
+> Para ejecutar el programa, simplemente ejecute el archivo PHP línea de comandos o terminal.
+
 ### Ejecución:
 
-> [!IMPORTANT]
-> Para ejecutar el programa, simplemente ejecute el archivo PHP línea de comandos.
-
-### Bash:
+### Bash
 
 ```
 php trabajoLibre.php
